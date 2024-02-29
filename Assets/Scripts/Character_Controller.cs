@@ -10,6 +10,7 @@ public class Character_Controller : MonoBehaviour
     private float playerSpeed = 2.0f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
+    public bool isMoving = false;
 
     public SkinnedMeshRenderer ghost_Mesh;
 
@@ -27,9 +28,9 @@ public class Character_Controller : MonoBehaviour
 
     public void Move()
     {
-        if(camera_Controller.target == controller.transform)
+        if (camera_Controller.target == controller.transform)
         {
-            if(camera_Controller.target.tag == "Character_Boy")
+            if (camera_Controller.target.tag == "Character_Boy")
             {
                 ghost_Mesh.enabled = false;
             }
@@ -50,7 +51,9 @@ public class Character_Controller : MonoBehaviour
             if (move != Vector3.zero)
             {
                 gameObject.transform.forward = move;
+                isMoving = true;
             }
+            else isMoving = false;
 
             // Changes the height position of the player..
             if (Input.GetButtonDown("Jump") && groundedPlayer)
@@ -61,5 +64,6 @@ public class Character_Controller : MonoBehaviour
             playerVelocity.y += gravityValue * Time.deltaTime;
             controller.Move(playerVelocity * Time.deltaTime);
         }
+
     }
 }

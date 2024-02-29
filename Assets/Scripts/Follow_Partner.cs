@@ -1,38 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Follow_Partner : MonoBehaviour
 {
-    public Camera_Controller camera_Controller;
-    public Transform Boy;
-    public Transform Ghost;
+    public NavMeshAgent nav;
 
-    public Transform partner;
+    //public Camera_Controller camera_Controller;
+    //public Transform boy;
+    //public Transform ghost;
+    public Transform target;
 
-    public Vector3 offset = new Vector3(-2, 0, -2);
     // Start is called before the first frame update
     void Start()
     {
-        Boy = camera_Controller.character_Boy.transform;
-        Ghost = camera_Controller.character_Ghost.transform;
+        nav = GetComponent<NavMeshAgent>();
+        //boy = camera_Controller.character_Boy.transform;
+        //ghost = camera_Controller.character_Ghost.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if(camera_Controller.target = Boy)
+        /*if(camera_Controller.target == boy.transform)
         {
-            partner = Ghost;
-
-            partner.position = Vector3.MoveTowards(partner.position, Boy.position + offset, 10);
+            nav.SetDestination(boy.position);
         }
 
-        if (camera_Controller.target = Ghost)
+        if (camera_Controller.target == ghost.transform)
         {
-            partner = Boy;
-
-            partner.position = Vector3.MoveTowards(partner.position, Ghost.position + offset, 10);
+            nav.SetDestination(ghost.position);
         }*/
+        nav.SetDestination(target.position);
+
     }
 }

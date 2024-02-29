@@ -6,6 +6,7 @@ public class Animation_Handler : MonoBehaviour
 {
     public Animator Animator;
     public Character_Controller character_Controller;
+    public Animation anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +18,16 @@ public class Animation_Handler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Boy_Animations();
     }
 
     void Boy_Animations()
     {
-        if (character_Controller.playerVelocity.y > 0f)
+        if (character_Controller.isMoving)
         {
-            Animator.SetBool("isMoving", true);
+            anim.Play("Run");
+            //Animator.SetBool("isMoving", true);
         }
+        else anim.Play("Idle");
     }
 }
