@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,17 +9,19 @@ public class Character_Controller : MonoBehaviour
     public Vector3 playerVelocity;
     private bool groundedPlayer;
     private float playerSpeed = 2.0f;
-    private float jumpHeight = 1.0f;
+    private float jumpHeight = 0f;
     private float gravityValue = -9.81f;
     public bool isMoving = false;
 
     public SkinnedMeshRenderer ghost_Mesh;
+    public Color color;
 
     public Camera_Controller camera_Controller;
 
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
+        color = ghost_Mesh.material.color;
     }
 
     void Update()
@@ -32,11 +35,13 @@ public class Character_Controller : MonoBehaviour
         {
             if (camera_Controller.target.tag == "Character_Boy")
             {
-                ghost_Mesh.enabled = false;
+                color.a = 0;
+                ghost_Mesh.material.color = color;
             }
             else
             {
-                ghost_Mesh.enabled = true;
+                color.a = 1;
+                ghost_Mesh.material.color = color;
             }
 
             groundedPlayer = controller.isGrounded;
