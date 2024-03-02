@@ -2,12 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class Character_Controller : MonoBehaviour
 {
     private CharacterController controller;
     public Vector3 playerVelocity;
-    private bool groundedPlayer;
+    public bool groundedPlayer;
     private float playerSpeed = 2.0f;
     private float jumpHeight = 0f;
     private float gravityValue = -9.81f;
@@ -18,10 +19,14 @@ public class Character_Controller : MonoBehaviour
 
     public Camera_Controller camera_Controller;
 
+    private EventInstance playerFootsteps;
+
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
         color = ghost_Mesh.material.color;
+
+        playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerFootsteps);
     }
 
     void Update()
@@ -68,7 +73,26 @@ public class Character_Controller : MonoBehaviour
 
             playerVelocity.y += gravityValue * Time.deltaTime;
             controller.Move(playerVelocity * Time.deltaTime);
+
+            UpdateSound();
         }
 
+    }
+
+    private void UpdateSound()
+    {
+        if (isMoving)
+        {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+            if(playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                playerFootsteps.start();
+            }
+        }
+        else
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }
