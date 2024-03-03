@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance { get; private set; }
 
     private EventInstance wind;
+    private EventInstance wolf;
+
 
     private void Awake()
     {
@@ -44,6 +46,16 @@ public class AudioManager : MonoBehaviour
         if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
         {
             wind.start();
+        }
+    }
+
+    public void WolfSound()
+    {
+        PLAYBACK_STATE playbackState;
+        wolf.getPlaybackState(out playbackState);
+        if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+        {
+            wolf.start();
         }
     }
 }

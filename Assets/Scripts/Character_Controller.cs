@@ -81,7 +81,7 @@ public class Character_Controller : MonoBehaviour
 
     private void UpdateSound()
     {
-        if (isMoving)
+        if (camera_Controller.target == camera_Controller.character_Boy && isMoving)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);

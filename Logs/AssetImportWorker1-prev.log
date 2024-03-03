@@ -15,7 +15,7 @@ E:/UnityProjects/AcerolaGameJam/Acerola_Game_Jam
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-58595
+60927
 Successfully changed project path to: E:/UnityProjects/AcerolaGameJam/Acerola_Game_Jam
 E:/UnityProjects/AcerolaGameJam/Acerola_Game_Jam
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/UnityProjects/AcerolaGameJam/Acerola_Game_Jam
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19952] Host "[IP] 192.168.0.218 [Port] 0 [Flags] 2 [Guid] 3537025372 [EditorId] 3537025372 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HVFPI29) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14904] Host "[IP] 192.168.0.218 [Port] 0 [Flags] 2 [Guid] 4170455463 [EditorId] 4170455463 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HVFPI29) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19952] Host "[IP] 192.168.0.218 [Port] 0 [Flags] 2 [Guid] 3537025372 [EditorId] 3537025372 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HVFPI29) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14904] Host "[IP] 192.168.0.218 [Port] 0 [Flags] 2 [Guid] 4170455463 [EditorId] 4170455463 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HVFPI29) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Platform WindowsStandaloneSupport does not support graphics device type 
-Refreshing native plugins compatible for Editor in 3.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 17.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path E:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'E:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56688
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: E:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005510 seconds.
-- Loaded All Assemblies, in  0.298 seconds
+Registered in 0.005097 seconds.
+- Loaded All Assemblies, in  0.290 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.208 seconds
-Domain Reload Profiling: 507ms
-	BeginReloadAssembly (98ms)
+- Finished resetting the current domain, in  0.221 seconds
+Domain Reload Profiling: 511ms
+	BeginReloadAssembly (94ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (8ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (115ms)
-		LoadAssemblies (99ms)
+	LoadAllAssembliesAndSetupDomain (114ms)
+		LoadAssemblies (94ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (112ms)
-			TypeCache.Refresh (111ms)
-				TypeCache.ScanAssembly (101ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (110ms)
+				TypeCache.ScanAssembly (100ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (209ms)
+	FinalizeReload (221ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (162ms)
+		SetupLoadedEditorAssemblies (171ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (109ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
+			ProcessInitializeOnLoadAttributes (118ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,190 +117,54 @@ Domain Reload Profiling: 507ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.468 seconds
-Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.521 seconds
+Refreshing native plugins compatible for Editor in 11.79 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.403 seconds
-Domain Reload Profiling: 870ms
-	BeginReloadAssembly (128ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (275ms)
-		LoadAssemblies (195ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (160ms)
-			TypeCache.Refresh (142ms)
-				TypeCache.ScanAssembly (134ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (403ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (294ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (40ms)
-			ProcessInitializeOnLoadAttributes (189ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Platform WindowsStandaloneSupport does not support graphics device type 
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.42 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2887 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 111 unused Assets / (2.7 MB). Loaded Objects now: 3345.
-Memory consumption went from 163.5 MB to 160.7 MB.
-Total: 3.759400 ms (FindLiveObjects: 0.199500 ms CreateObjectMapping: 0.102600 ms MarkObjects: 2.367900 ms  DeleteObjects: 1.088800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 3470.424016 seconds.
-  path: Assets/Scripts/Follow_Partner.cs
-  artifactKey: Guid(82f33aef266b4aa40bd7954a0d802739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Follow_Partner.cs using Guid(82f33aef266b4aa40bd7954a0d802739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aaf2e9ca950d397dd76c2b19cb00399') in 0.005280 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Platform WindowsStandaloneSupport does not support graphics device type 
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.453 seconds
-Refreshing native plugins compatible for Editor in 1.20 ms, found 0 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.723 seconds
-Domain Reload Profiling: 1176ms
-	BeginReloadAssembly (136ms)
+- Finished resetting the current domain, in  0.448 seconds
+Domain Reload Profiling: 969ms
+	BeginReloadAssembly (125ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
+		CreateAndSetChildDomain (19ms)
 	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (256ms)
-		LoadAssemblies (186ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (326ms)
+		LoadAssemblies (199ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (152ms)
-			TypeCache.Refresh (143ms)
-				TypeCache.ScanAssembly (134ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (724ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (167ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (448ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (297ms)
+		SetupLoadedEditorAssemblies (319ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (192ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 1.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2792 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 69 unused Assets / (2.7 MB). Loaded Objects now: 3360.
-Memory consumption went from 141.5 MB to 138.8 MB.
-Total: 3.212000 ms (FindLiveObjects: 0.188900 ms CreateObjectMapping: 0.090200 ms MarkObjects: 2.115100 ms  DeleteObjects: 0.817100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Platform WindowsStandaloneSupport does not support graphics device type 
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.443 seconds
-Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.702 seconds
-Domain Reload Profiling: 1145ms
-	BeginReloadAssembly (132ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (255ms)
-		LoadAssemblies (185ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (147ms)
-			TypeCache.Refresh (138ms)
-				TypeCache.ScanAssembly (128ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (702ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (283ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
+			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (181ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
+			BeforeProcessingInitializeOnLoad (44ms)
+			ProcessInitializeOnLoadAttributes (205ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 1.25 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Platform WindowsStandaloneSupport does not support graphics device type 
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 11.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2793 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 69 unused Assets / (2.7 MB). Loaded Objects now: 3375.
-Memory consumption went from 141.8 MB to 139.1 MB.
-Total: 3.273300 ms (FindLiveObjects: 0.170200 ms CreateObjectMapping: 0.097600 ms MarkObjects: 1.985600 ms  DeleteObjects: 1.019300 ms)
+Unloading 3239 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 173 unused Assets / (3.3 MB). Loaded Objects now: 3636.
+Memory consumption went from 190.1 MB to 186.8 MB.
+Total: 3.382300 ms (FindLiveObjects: 0.228200 ms CreateObjectMapping: 0.127000 ms MarkObjects: 2.093000 ms  DeleteObjects: 0.933400 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -316,156 +180,124 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 768.184781 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Berry_Red.fbx
-  artifactKey: Guid(babdf61d62b34d14d8dd2d1de6d2146b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Berry_Red.fbx using Guid(babdf61d62b34d14d8dd2d1de6d2146b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325818fedbca14bb2d64f542661a0a51') in 0.150340 seconds
+  Time since last request: 17007.743474 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Berry_Red.prefab
+  artifactKey: Guid(1d302e8402becf3468b04ed7dee320b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Berry_Red.prefab using Guid(1d302e8402becf3468b04ed7dee320b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177e4e20701200f48f5f79f34e795fe4') in 0.008153 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Oak_Crown.fbx
-  artifactKey: Guid(d200898fe80a11b47b1cfea46fa2aede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Oak_Crown.fbx using Guid(d200898fe80a11b47b1cfea46fa2aede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6cd2e06daccce0e064287ad63f6ffc') in 0.018929 seconds
+  Time since last request: 0.007707 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Bush_Tall.prefab
+  artifactKey: Guid(c1cddd62ba2a52444bba743692ffcc2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Bush_Tall.prefab using Guid(c1cddd62ba2a52444bba743692ffcc2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110f82bca3425246ad4d8eb1cba16d29') in 0.002538 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Poplar_Crown.fbx
-  artifactKey: Guid(5bbe297f13b3eaf4d8ec511d9a4b7b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Poplar_Crown.fbx using Guid(5bbe297f13b3eaf4d8ec511d9a4b7b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d7e48857f6513192499f04e0c97448') in 0.017226 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
   Time since last request: 0.000010 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Oak_Stump.fbx
-  artifactKey: Guid(638a8d36e61dddf43b468ef5cc974973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Oak_Stump.fbx using Guid(638a8d36e61dddf43b468ef5cc974973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3a3639105f3214efdc1fd176dc11fd') in 0.014754 seconds
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Misc_SugarCane.prefab
+  artifactKey: Guid(8f4127382aaaeaf41894e7674dc825b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Misc_SugarCane.prefab using Guid(8f4127382aaaeaf41894e7674dc825b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd010ee9409e78fa54ab8615daea233') in 0.001301 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Oak.fbx
-  artifactKey: Guid(23863b998c108bb4a9634dec40b167d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Oak.fbx using Guid(23863b998c108bb4a9634dec40b167d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327873929e1daf24b15a06738503835e') in 0.017393 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Pine_Stump.fbx
-  artifactKey: Guid(f8424ba3a0f7c9549b0c547ab6408c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Pine_Stump.fbx using Guid(f8424ba3a0f7c9549b0c547ab6408c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec9206e488836457ab6cb5824c25ba7') in 0.017360 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Log.fbx
-  artifactKey: Guid(c67f0765db7bf344791c04dc2aa91e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Log.fbx using Guid(c67f0765db7bf344791c04dc2aa91e62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f9847ae773cc4d6bcdd792cde11e42') in 0.016484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Pine.fbx
-  artifactKey: Guid(8b2617366ee504540a3ba09cd5e55373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Pine.fbx using Guid(8b2617366ee504540a3ba09cd5e55373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d57f8556706558b8529cda4da681c6') in 0.019208 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Flower_Harvested.fbx
-  artifactKey: Guid(6a88f42de2786e14299cc854e1092049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Flower_Harvested.fbx using Guid(6a88f42de2786e14299cc854e1092049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6156d7c19d4c32ad599a9b89bf26b4c0') in 0.012159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Log_Bundle.fbx
-  artifactKey: Guid(5949db94e48b77642870ea6a8b1277b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Log_Bundle.fbx using Guid(5949db94e48b77642870ea6a8b1277b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962c96f8371d8a7654c586bafdf2cf72') in 0.017461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Poplar_Stump.fbx
-  artifactKey: Guid(c8c9cb5b5c1956849ad852b2a81e11d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Tree_Poplar_Stump.fbx using Guid(c8c9cb5b5c1956849ad852b2a81e11d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da83d410a1d9c8994254ff568a67b84') in 0.015938 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 1.060562 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Bush_Berries_Red.fbx
-  artifactKey: Guid(cd88173da04aaf3408ca75ecc525a0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Bush_Berries_Red.fbx using Guid(cd88173da04aaf3408ca75ecc525a0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5af5d1898f9a90f4d336f200445e04b') in 0.013838 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Mushroom_RedWhite.fbx
-  artifactKey: Guid(2ec45a562bda9174a89d38f912bf8ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Mushroom_RedWhite.fbx using Guid(2ec45a562bda9174a89d38f912bf8ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb63c550db6b449b9f9af225798857d5') in 0.018135 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.027697 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Bush_Berries_Blue.fbx
-  artifactKey: Guid(5a3881d5bd7fae04581fd19e90e1c10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Bush_Berries_Blue.fbx using Guid(5a3881d5bd7fae04581fd19e90e1c10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42f4dce99c566df0a046c29b7ca234ab') in 0.013910 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Customizable Skybox/Materials/Clouds.mat
-  artifactKey: Guid(b2fcea6c7d9dbab4ca781825705d50be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Materials/Clouds.mat using Guid(b2fcea6c7d9dbab4ca781825705d50be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97b43f9571d088f90d0d5096da34be6') in 0.005853 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
   Time since last request: 0.000013 seconds.
-  path: Assets/Customizable Skybox/Model/Materials/dark trunk.mat
-  artifactKey: Guid(b50f1c4e199dc3b47b56b0880d757857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Model/Materials/dark trunk.mat using Guid(b50f1c4e199dc3b47b56b0880d757857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919d615a31f32398dac7d4fd75d41695') in 0.005169 seconds
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Apple_Stump.prefab
+  artifactKey: Guid(526d418aa17e5ac4f88501363dd8055f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Apple_Stump.prefab using Guid(526d418aa17e5ac4f88501363dd8055f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '241aa0422e71466fff09bad03c6306ce') in 0.001812 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
   Time since last request: 0.000010 seconds.
-  path: Assets/Customizable Skybox/Materials/dark trunk.mat
-  artifactKey: Guid(7c7f7e923f30d8b4193dfc9a7eb33ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Materials/dark trunk.mat using Guid(7c7f7e923f30d8b4193dfc9a7eb33ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4233aa4b5fb4f5c2be9e97a597d651') in 0.004619 seconds
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Log_Bundle.prefab
+  artifactKey: Guid(9edac5deb34cc18448f3fd2b36ce5363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Log_Bundle.prefab using Guid(9edac5deb34cc18448f3fd2b36ce5363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7ddc53da80e6fc2eb633cae6177142') in 0.001416 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.429246 seconds.
-  path: Assets/Customizable Skybox/Model/Materials/earth.mat
-  artifactKey: Guid(9d1ca55e2263fd54589900465f90d06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Model/Materials/earth.mat using Guid(9d1ca55e2263fd54589900465f90d06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ace5b5e234181ee1c25a10257fa812d') in 0.005402 seconds
+  Time since last request: 0.000014 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Poplar.prefab
+  artifactKey: Guid(762fe15c3510d224eb350645d4169485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Poplar.prefab using Guid(762fe15c3510d224eb350645d4169485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c02293eb537e069b830e3fd5e72de5e') in 0.001354 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.677554 seconds.
-  path: Assets/AGWYN's Low Poly Destructible Vegetation/Models/Bush.fbx
-  artifactKey: Guid(e33d6d039ac1740478fffb120e786b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Models/Bush.fbx using Guid(e33d6d039ac1740478fffb120e786b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4143b7b2160e1f40dd4132c46ec7a4') in 0.014072 seconds
+  Time since last request: 0.000011 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Misc_SugarCane_Stump.prefab
+  artifactKey: Guid(ca7f98c6c6853c248b9e2413714623e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Misc_SugarCane_Stump.prefab using Guid(ca7f98c6c6853c248b9e2413714623e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616b4e48d6d6ba4dbca41a98b56f2875') in 0.001275 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Poplar_Stump.prefab
+  artifactKey: Guid(3794fb64ca537944896da1e61683d97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Poplar_Stump.prefab using Guid(3794fb64ca537944896da1e61683d97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd63bbef6f89121726d700ca2657ca6') in 0.001187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Fruit_Red.prefab
+  artifactKey: Guid(77e3d811a3264a342a4289fb3b2d284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Fruit_Red.prefab using Guid(77e3d811a3264a342a4289fb3b2d284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '260b36589abda4db7f1916895db1bb92') in 0.001545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Bush_Berries_Red_Tall.prefab
+  artifactKey: Guid(a5ce792aba694b84a861a1c88eacecd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Bush_Berries_Red_Tall.prefab using Guid(a5ce792aba694b84a861a1c88eacecd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e5718e5243613a62f4abdc78446ffe') in 0.001556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Oak_Stump.prefab
+  artifactKey: Guid(26b77681ae929914aa6f5b15a802120e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Oak_Stump.prefab using Guid(26b77681ae929914aa6f5b15a802120e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4364eb5c030f9e244ae3e83e2dd2ea12') in 0.002034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Pine.prefab
+  artifactKey: Guid(060b1acc560c2df498f7f9023e53e323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Pine.prefab using Guid(060b1acc560c2df498f7f9023e53e323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd37d23a5154fb699d94dde5d60b255c') in 0.001345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Mushroom_RedWhite.prefab
+  artifactKey: Guid(9c79bb7bb989b9347914a472154b2b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Mushroom_RedWhite.prefab using Guid(9c79bb7bb989b9347914a472154b2b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47022778d7605f93b4377b42c770370c') in 0.001195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Pine_Stump.prefab
+  artifactKey: Guid(ebafbdc2a7e4aba4fab20633a39c0a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Pine_Stump.prefab using Guid(ebafbdc2a7e4aba4fab20633a39c0a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126c21dda086aca28a46f740a58e4b28') in 0.001301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Apple_Crown.prefab
+  artifactKey: Guid(cb17e4b70fd77404fb95005826d98f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AGWYN's Low Poly Destructible Vegetation/Prefabs/Tree_Apple_Crown.prefab using Guid(cb17e4b70fd77404fb95005826d98f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8e449744b6ea364cc1fef5378f56d0') in 0.001686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
