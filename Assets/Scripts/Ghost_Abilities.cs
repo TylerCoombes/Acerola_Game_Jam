@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Ghost_Abilities : MonoBehaviour
 {
-    public CharacterController characterController;
+    public Camera_Controller cameraController;
     public float PhaseTimer = 3;
     public bool inputPressed = false;
     // Start is called before the first frame update
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        
     }
 
     // Update is called once per frame
@@ -21,28 +21,31 @@ public class Ghost_Abilities : MonoBehaviour
 
     void PhaseThrough()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if(cameraController.target == cameraController.character_Ghost)
         {
-            inputPressed = true;
-        }
-
-        if (inputPressed)
-        {
-            PhaseTimer -= Time.deltaTime;
-
-
-            if (PhaseTimer > 0)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Physics.IgnoreLayerCollision(6, 7, true);
+                inputPressed = true;
             }
-            else inputPressed = false;
 
-        }
+            if (inputPressed)
+            {
+                PhaseTimer -= Time.deltaTime;
 
-        if (!inputPressed )
-        {
-            Physics.IgnoreLayerCollision(6, 7, false);
-            PhaseTimer = 3;
+
+                if (PhaseTimer > 0)
+                {
+                    Physics.IgnoreLayerCollision(6, 7, true);
+                }
+                else inputPressed = false;
+
+            }
+
+            if (!inputPressed)
+            {
+                Physics.IgnoreLayerCollision(6, 7, false);
+                PhaseTimer = 3;
+            }
         }
     }
 }

@@ -13,6 +13,7 @@ public class Character_Controller : MonoBehaviour
     private float jumpHeight = 0f;
     private float gravityValue = -9.81f;
     public bool isMoving = false;
+    public Animator anim;
 
     public SkinnedMeshRenderer ghost_Mesh;
     public Color color;
@@ -27,6 +28,8 @@ public class Character_Controller : MonoBehaviour
         color = ghost_Mesh.material.color;
 
         playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerFootsteps);
+
+        anim = gameObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -61,9 +64,11 @@ public class Character_Controller : MonoBehaviour
             if (move != Vector3.zero)
             {
                 gameObject.transform.forward = move;
+                anim.SetBool("isMoving", true);
+
                 isMoving = true;
             }
-            else isMoving = false;
+            else anim.SetBool("isMoving", false);
 
             // Changes the height position of the player..
             if (Input.GetButtonDown("Jump") && groundedPlayer)
@@ -81,7 +86,7 @@ public class Character_Controller : MonoBehaviour
 
     private void UpdateSound()
     {
-        if (camera_Controller.target == camera_Controller.character_Boy && isMoving)
+        if (camera_Controller.target == camera_Controller.character_Boy && anim.GetBool("isMoving") == true)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);

@@ -22,7 +22,7 @@ public class Animation_Handler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Boy_Animations();
+        //Boy_Animations();
     }
 
     void Boy_Animations()
