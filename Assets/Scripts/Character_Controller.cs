@@ -9,7 +9,7 @@ public class Character_Controller : MonoBehaviour
     private CharacterController controller;
     public Vector3 playerVelocity;
     public bool groundedPlayer;
-    private float playerSpeed = 2.0f;
+    public float playerSpeed = 2.0f;
     private float jumpHeight = 0f;
     private float gravityValue = -9.81f;
     public bool isMoving = false;
@@ -64,11 +64,15 @@ public class Character_Controller : MonoBehaviour
             if (move != Vector3.zero)
             {
                 gameObject.transform.forward = move;
-                anim.SetBool("isMoving", true);
+                anim.SetBool("isWalking", true);
 
                 isMoving = true;
             }
-            else anim.SetBool("isMoving", false);
+            else
+            {
+                anim.SetBool("isIdle", true);
+                anim.SetBool("isWalking", false);
+            }
 
             // Changes the height position of the player..
             if (Input.GetButtonDown("Jump") && groundedPlayer)
@@ -86,7 +90,7 @@ public class Character_Controller : MonoBehaviour
 
     private void UpdateSound()
     {
-        if (camera_Controller.target == camera_Controller.character_Boy && anim.GetBool("isMoving") == true)
+        if (camera_Controller.target == camera_Controller.character_Boy && anim.GetBool("isWalking") == true)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
