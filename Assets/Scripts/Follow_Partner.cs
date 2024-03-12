@@ -16,22 +16,11 @@ public class Follow_Partner : MonoBehaviour
     void Start()
     {
         nav = GetComponent<NavMeshAgent>();
-        //boy = camera_Controller.character_Boy.transform;
-        //ghost = camera_Controller.character_Ghost.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*if(camera_Controller.target == boy.transform)
-        {
-            nav.SetDestination(boy.position);
-        }
-
-        if (camera_Controller.target == ghost.transform)
-        {
-            nav.SetDestination(ghost.position);
-        }*/
         nav.SetDestination(target.position);
 
     }

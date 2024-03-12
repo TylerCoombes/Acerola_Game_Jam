@@ -10,6 +10,11 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference wind {  get; private set; }
     [field: SerializeField] public EventReference wolf { get; private set; }
 
+    [field: Header("Music")]
+    [field: SerializeField] public EventReference sceneMusic { get; private set; }
+    [field: SerializeField] public EventReference menuMusic { get; private set; }
+
+
 
     public static FMODEvents instance {  get; private set; }
 

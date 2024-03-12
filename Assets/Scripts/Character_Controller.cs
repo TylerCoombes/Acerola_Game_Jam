@@ -29,7 +29,7 @@ public class Character_Controller : MonoBehaviour
 
         playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerFootsteps);
 
-        anim = gameObject.GetComponent<Animator>();
+        //anim = gameObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -43,11 +43,16 @@ public class Character_Controller : MonoBehaviour
         {
             if (camera_Controller.target.tag == "Character_Boy")
             {
+                anim.SetBool("isBoy", true);
+
                 color.a = 0;
                 ghost_Mesh.material.color = color;
             }
-            else
+            else if (camera_Controller.target.tag == "Character_Ghost")
             {
+                anim.SetBool("isBoy", false);
+                anim.SetBool("isWalking", false);
+
                 color.a = 1;
                 ghost_Mesh.material.color = color;
             }
@@ -64,14 +69,29 @@ public class Character_Controller : MonoBehaviour
             if (move != Vector3.zero)
             {
                 gameObject.transform.forward = move;
+                anim.SetBool("isIdle", false);
                 anim.SetBool("isWalking", true);
 
                 isMoving = true;
+
+                if(Input.GetKeyDown(KeyCode.LeftShift)) 
+                {
+                    playerSpeed *= 1.5f;
+                    anim.SetBool("isWalking", false);
+                    anim.SetBool("isRunning", true);
+                }
+                if(Input.GetKeyUp(KeyCode.LeftShift))
+                {
+                    playerSpeed /= 1.5f;
+                    anim.SetBool("isWalking", true);
+                    anim.SetBool("isRunning", false);
+                }
             }
             else
             {
                 anim.SetBool("isIdle", true);
                 anim.SetBool("isWalking", false);
+                anim.SetBool("isRunning", false);
             }
 
             // Changes the height position of the player..
@@ -90,7 +110,7 @@ public class Character_Controller : MonoBehaviour
 
     private void UpdateSound()
     {
-        if (camera_Controller.target == camera_Controller.character_Boy && anim.GetBool("isWalking") == true)
+        if (camera_Controller.target.tag == "Character_Boy" && anim.GetBool("isWalking") == true)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);

@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public ObjectDialogue objectDialogue;
     public DialogueManager manager;
+    public float timer;
 
     public void TriggerDialogue()
     {
@@ -23,7 +24,7 @@ public class DialogueTrigger : MonoBehaviour
 
     IEnumerator DialogueRemove()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(timer);
         manager.animator.SetBool("isOpen", false);
     }
 }
