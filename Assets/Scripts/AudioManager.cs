@@ -16,6 +16,29 @@ public class AudioManager : MonoBehaviour
 
     public Scene scene;
 
+    [Header("Volume")]
+    [Range(0, 1)]
+
+    public float masterVolume;
+    [Range(0, 1)]
+
+    public float musicVolume;
+    [Range(0, 1)]
+
+    public float ambienceVolume;
+    [Range(0, 1)]
+
+    public float SFXVolume;
+
+
+    private Bus masterBus;
+
+    private Bus musicBus;
+
+    private Bus ambienceBus;
+
+    private Bus SFXBus;
+
 
     private void Awake()
     {
@@ -24,6 +47,11 @@ public class AudioManager : MonoBehaviour
             Debug.LogError("Found more than one audio Manager in the scene");
         }
         instance = this;
+
+        masterBus = RuntimeManager.GetBus("bus:/");
+        musicBus = RuntimeManager.GetBus("bus:/Music");
+        ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
+        SFXBus = RuntimeManager.GetBus("bus:/SFX");
     }
 
     // Start is called before the first frame update
@@ -41,6 +69,11 @@ public class AudioManager : MonoBehaviour
         WindSound();
         SceneMusic();
         MenuMusic();
+
+        masterBus.setVolume(masterVolume);
+        musicBus.setVolume(musicVolume);
+        ambienceBus.setVolume(ambienceVolume);
+        SFXBus.setVolume(SFXVolume);
     }
 
     public EventInstance CreateEventInstance(EventReference eventReference)
