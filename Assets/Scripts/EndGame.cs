@@ -21,7 +21,8 @@ public class EndGame : MonoBehaviour
     {
         if(other.gameObject.tag == "Character_Boy" || other.gameObject.tag == "Character_Ghost")
         {
-            Application.Quit();
+            SceneManager.LoadScene(0);
+            Debug.Log("Application to menu");
         }
     }
 }

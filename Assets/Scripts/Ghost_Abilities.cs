@@ -21,14 +21,14 @@ public class Ghost_Abilities : MonoBehaviour
 
     void PhaseThrough()
     {
-        if(cameraController.target == cameraController.character_Ghost)
+        if (cameraController.target == cameraController.character_Ghost)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 inputPressed = true;
             }
 
-            if (inputPressed)
+            if (inputPressed == true)
             {
                 PhaseTimer -= Time.deltaTime;
 
@@ -46,6 +46,12 @@ public class Ghost_Abilities : MonoBehaviour
                 Physics.IgnoreLayerCollision(6, 7, false);
                 PhaseTimer = 3;
             }
+        }
+        else
+        {
+            Physics.IgnoreLayerCollision(6, 7, false);
+            inputPressed = false;
+            PhaseTimer = 3;
         }
     }
 }
